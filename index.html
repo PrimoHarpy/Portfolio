@@ -12,33 +12,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+
   <meta charset="UTF-8">
-  <title>Mi Portafolio</title>
+  <title>Portfolio</title>
+
+  <!-- 🎨 Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/lah4yqd.css">
+
   <style>
     body {
-      font-family: sans-serif;
+      header h1 {
+ font-family: "termina", sans-serif;
+font-weight: 900;
+font-style: normal;
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
     }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
     header {
       background-color: #222;
       color: white;
       padding: 20px;
       text-align: center;
     }
+
     section.proyecto {
       padding: 30px 20px;
       border-bottom: 2px solid #ddd;
     }
+
     .proyecto h2 {
       margin-bottom: 10px;
       color: #333;
     }
+
     .proyecto p {
       max-width: 600px;
       margin-bottom: 15px;
     }
+
     .portada {
       width: 100%;
       max-width: 800px;
@@ -46,24 +68,20 @@
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       margin-bottom: 20px;
     }
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-.galeria img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
     }
+
     .galeria img {
       width: 100%;
+      height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     footer {
       background-color: #222;
       color: white;
@@ -73,31 +91,130 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Mi Portafolio</h1>
-  <p>Alejandro Jimenez - Diseño Gráfico</p>
+  <h1>Portfolio</h1>
+  <p>Alejandro Jimenez - Graphic Design</p>
 </header>
 
-<!-- Proyecto 1 -->
+  
+
+
+  <!-- ⭐ PORTADA con links a cada proyecto (galería de entrada) -->
+<section id="inicio" class="galeria-portada">
+  <a href="#proyecto1" class="tarjeta-proyecto">
+    <img src="https://i.imgur.com/ERThTbY.jpg" alt="Proyecto 1">
+  <h3 class="titulo-portada">Narrative</h3>
+  </a>
+  <a href="#proyecto2" class="tarjeta-proyecto">
+    <img src="https://imgur.com/g8VN4TL.jpg" alt="Proyecto 2">
+      <h3 class="titulo-portada">Rebranding</h3>
+  </a>
+  <a href="#proyecto3" class="tarjeta-proyecto">
+    <img src="https://imgur.com/6suQkRQ.jpg" alt="Proyecto 3">
+      <h3 class="titulo-portada">Speculative/Provocative</h3>
+  </a>
+  <a href="#proyecto4" class="tarjeta-proyecto">
+    <img src="https://imgur.com/mM9BeCu.jpg" alt="Proyecto 4">
+      <h3 class="titulo-portada">Ilustrations/Publication</h3>
+  </a>
+  <a href="#proyecto5" class="tarjeta-proyecto">
+    <img src="https://imgur.com/M8ubmup.jpg" alt="Proyecto 5">
+      <h3 class="titulo-portada">Typeface</h3>
+  </a>
+  <a href="#proyecto6" class="tarjeta-proyecto">
+    <img src="https://imgur.com/avy948a.jpg" alt="Proyecto 6">
+      <h3 class="titulo-portada">Thesis</h3>
+  </a>
+  <a href="#proyecto7" class="tarjeta-proyecto">
+    <img src="https://imgur.com/oPfygUr.jpg" alt="Proyecto 7">
+      <h3 class="titulo-portada">Music Posters</h3>
+  </a>
+    <a href="#proyecto8" class="tarjeta-proyecto">
+    <img src="https://imgur.com/YVCHPHe.jpg" alt="Proyecto 8">
+      <h3 class="titulo-portada">Brand Creation</h3>
+  </a>
+        <a href="#proyecto9" class="tarjeta-proyecto">
+    <img src="https://imgur.com/UBSt1kM.jpg" alt="Proyecto 9">
+      <h3 class="titulo-portada">Graffiti Zine</h3>
+  </a>
+      <a href="#proyecto10" class="tarjeta-proyecto">
+    <img src="https://imgur.com/dnNyANS.jpg" alt="Proyecto 10">
+      <h3 class="titulo-portada">1st Publication</h3>
+  </a>
+        <a href="#proyecto11" class="tarjeta-proyecto">
+    <img src="https://imgur.com/tEqXDsL.jpg" alt="Proyecto 11">
+      <h3 class="titulo-portada">Murals</h3>
+  </a>
+          <a href="#proyecto12" class="tarjeta-proyecto">
+    <img src="https://imgur.com/aj7ed0C.jpg" alt="Proyecto 12">
+      <h3 class="titulo-portada">Car Posters</h3>
+  </a>
+            <a href="#proyecto13" class="tarjeta-proyecto">
+    <img src="https://imgur.com/CG6rU9E.jpg" alt="Proyecto 13">
+      <h3 class="titulo-portada">Logos</h3>
+  </a>
+              <a href="#proyecto14" class="tarjeta-proyecto">
+    <img src="https://imgur.com/18rv1gV.jpg" alt="Proyecto 14">
+      <h3 class="titulo-portada">Random Posters</h3>
+  </a>
+                <a href="#proyecto15" class="tarjeta-proyecto">
+    <img src="https://imgur.com/SkNSkSU.jpg" alt="Proyecto 15">
+      <h3 class="titulo-portada">Perspective Drawings</h3>
+  </a>
+                  <a href="#proyecto16" class="tarjeta-proyecto">
+    <img src="https://imgur.com/hJ3CfiZ.jpg" alt="Proyecto 16">
+      <h3 class="titulo-portada">Clothes</h3>
+  </a>
+</section>
+
+    <!-- 🖼 PROYECTO 1 -->
+  <section id="proyecto1">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+  
+ <!-- 🖼️ Proyecto 1 -->
 <section class="proyecto">
-  <h2>Proyecto 1: Regenerate</h2>
-  <p>Este proyecto consistió en desarrollar la identidad visual para una marca de ropa juvenil, incluyendo logotipo, paleta de colores y papelería corporativa.</p>
+  <h2>Project 1: Regenerate</h2>
+  <p class="texto-subproyecto">Create a new narrative approach to old essays.</p>
 
   <div class="portada-info">
+    <!-- Imagen de portada a la izquierda -->
     <img class="portada" src="https://i.imgur.com/ERThTbY.jpg" alt="Portada Proyecto 1">
-    
-    <div class="info-extra">
-      <h4>Detalles del Proyecto</h4>
+
+    <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
       <ul>
-        <li><strong>Cliente:</strong> Urban Wear</li>
-        <li><strong>Año:</strong> 2024</li>
-        <li><strong>Herramientas:</strong> Illustrator, Photoshop</li>
-        <li><strong>Tipo:</strong> Branding completo</li>
+        <li><strong>Client:</strong> University 2nd year Project</li>
+        <li><strong>Year:</strong> 2022</li>
+        <li><strong>Tools:</strong> Indesign, Photoshop</li>
+        <li><strong>Type:</strong> Publication</li>
       </ul>
+
+      <div class="texto-detalles">
+The idea was to make it more appealing to newer generations. Since the text and formats were outdated, I decided to present it in a magazine layout to make it more visually engaging. I also drew inspiration from internet culture and turned the texts into something of a meme, poking fun at them. Each one had a unique approach."
+      </div>
+
+      <div class="texto-detalles">
+Out of the three I created, the first one focused on legibility. I made a case for experimenting with the readability of the essay. Since it was a long text, I had to strike a balance to avoid tiring the readers.
+      </div>
+
+      <div class="texto-detalles">
+The second was an interview, and the standout moment for me was how much the interviewer focused on himself rather than on the person being interviewed. I took that as a concept, exaggerating his importance. Additionally, after researching his social media, I noticed he only posted pictures of cats, so I incorporated that too, portraying the interviewer as a cat.
+      </div>
+      
+            <div class="texto-detalles">
+The last one didn’t offer much to work with, except that it was about rules. After looking into who wrote it—Jeffrey Keedy, who had recently posted psychedelic drawings—I decided to play into that chaotic, disorganized, and carefree vibe, essentially breaking all the rules.
+      </div>
+      
     </div>
   </div>
+</section>
+
 
   <div class="galeria">
     <img src="https://i.imgur.com/FD61GmV.jpg" alt="Foto 1">
@@ -111,35 +228,52 @@
   </div>
 </section>
 
+       <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section> 
+    
+    
+      <!-- 🖼 PROYECTO 2 -->
+  <section id="proyecto2">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->  
+    
+    
 
 <!-- Proyecto 2 -->
+ <!-- 🖼️ Proyecto 2 -->
 <section class="proyecto">
-  <h2>Proyecto 2: Diseño para Cervecería</h2>
-  <p>Descripción del proyecto 2 aquí...</p>
+  <h2>Project 2: Verdant Brewing</h2>
+  <p class="texto-subproyecto">Make a summer edition beer of an existing beer they had.</p>
 
   <div class="portada-info">
     <img class="portada" src="https://imgur.com/g8VN4TL.jpg" alt="Portada Proyecto 2">
 
-    <div class="info-extra">
-      <h4>Detalles del Proyecto</h4>
+     <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
       <ul>
-        <li><strong>Cliente:</strong> Cervecería Verdant</li>
-        <li><strong>Año:</strong> 2025</li>
-        <li><strong>Herramientas:</strong> Illustrator, Photoshop</li>
+        <li><strong>Client:</strong> University 3rd year Project</li>
+        <li><strong>Year:</strong> 2024</li>
+        <li><strong>Tools:</strong> Indesign, Procreate</li>
+        <li><strong>Type:</strong> Rebranding</li>
       </ul>
 
       <!-- Imagen pequeña con texto debajo -->
       <div style="margin-top: 15px; width: 40%;">
         <img src="https://i.imgur.com/D67fsZf.jpg" alt="Brief Cervecería Verdant" style="width: 100%; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.1);">
-        <p style="font-size: 0.9rem; color: #555; margin-top: 8px;">
-          Imagen del brief proporcionada por La cervecería Verdant, Falmouth.
+        <p style="font-size: 1.1rem; color: #555; margin-top: 8px;">
+          Image of the brief provided by Verdant Brewery, Falmouth.
         </p>
       </div>
 
-    </div>
-  </div>
-
-
+               <div class="texto-detalles">
+For this one, I leveraged the extravagant name and used my love for typography to turn it into an illustration/type drawing. I made it visually striking and over the top, just like the name. We were limited by the color palette, so there wasn’t much we could do with that. The only limitations were the color palette, the beer name, the logo, and the tag with all the ingredients and legal information it had to include.
+      </div>   
+      
     </div>
   </div>
 
@@ -154,22 +288,43 @@
   </div>
 </section>
 
+         <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section> 
+  
+  
+      <!-- 🖼 PROYECTO 3 -->
+  <section id="proyecto3">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+  
 <!-- Proyecto 3 -->
 <section class="proyecto">
-  <h2>Proyecto 3: Glass Cannon Volver</h2>
-  <p>Este proyecto consistió en desarrollar la identidad visual para una marca de ropa juvenil, incluyendo logotipo, paleta de colores y papelería corporativa.</p>
+  <h2>Project 3: Glass Cannon Volver</h2>
+  <p class="texto-subproyecto">Exaggerate the branding tactics vapes use to target kids.</p>
 
   <div class="portada-info">
-    <img class="portada" src="https://imgur.com/6suQkRQ.jpg" alt="Portada Proyecto 1">
+    <img class="portada" src="https://imgur.com/6suQkRQ.jpg" alt="Portada Proyecto 3">
     
-    <div class="info-extra">
-      <h4>Detalles del Proyecto</h4>
+    <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
       <ul>
-        <li><strong>Cliente:</strong> Urban Wear</li>
-        <li><strong>Año:</strong> 2024</li>
-        <li><strong>Herramientas:</strong> Illustrator, Photoshop</li>
-        <li><strong>Tipo:</strong> Branding completo</li>
+        <li><strong>Client:</strong> University 3rd year Project</li>
+        <li><strong>Year:</strong> 2024</li>
+        <li><strong>Tools:</strong> Indesign, Photoshop, Procreate</li>
+        <li><strong>Type:</strong> Provocative Design</li>
       </ul>
+
+      <div class="texto-detalles">
+This project was inspired when I visited a vape shop and noticed all the colors, names, and the overall aesthetic. It made me question why it seemed so geared toward kids, even though it wasn't intended for them. Then I realized that a close relative of vapes had done this in the past—subtle branding aimed at kids, even when it was illegal for them to consume it. I'm talking about tobacco companies. So, I started researching and came up with the idea of creating my own branding aimed at kids, but in such an exaggerated way that it would also grab the attention of adults and make them realize how absurd the marketing tactics of vapes are.
+      </div>
+            <div class="texto-detalles">
+So, I started producing some content about tobacco with a satirical tone. Then, I came across a vape that could change flavors with the motion of a revolver. That’s when the idea hit me: What if I made a vape revolver? Interestingly, you have to aim it at your mouth to smoke. This perfectly blended with the outcome I wanted. It would attract kids because it looks like a toy gun, but if an adult saw it, they’d definitely question why a kid is aiming a gun at their mouth—even if it’s just a toy. So, I created a prototype of the vape, making it functional, even though it’s just a prototype.
+      </div>
     </div>
   </div>
 
@@ -178,30 +333,51 @@
     <img src="https://imgur.com/8hK2EcH.jpg" alt="Foto 2">
     <img src="https://imgur.com/AXsfkLH.jpg" alt="Foto 3">
     <img src="https://imgur.com/RteEhQW.jpg" alt="Foto 4">
-    <img src="https://imgur.com/AKDHYms.jpg" alt="Foto 5">
     <img src="https://imgur.com/ref5Awl.jpg" alt="Foto 6">
     <img src="https://imgur.com/2vAuqzF.jpg" alt="Foto 7">
     <img src="https://imgur.com/a88KwLO.jpg" alt="Foto 8">
     <img src="https://imgur.com/m1GHDrb.jpg" alt="Foto 8">
+    <img src="https://imgur.com/AKDHYms.jpg" alt="Foto 5">
+    <img src="https://imgur.com/9cXctkc.jpg" alt="Foto 8">
+    <img src="https://imgur.com/F4WmgaX.jpg" alt="Foto 5">
   </div>
 </section>
 
+          <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>    
+    
+ 
+        <!-- 🖼 PROYECTO 4 -->
+  <section id="proyecto4">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+  
+    
 <!-- Proyecto 4 -->
 <section class="proyecto">
-  <h2>Proyecto 4: 7 Collection</h2>
-  <p>Este proyecto consistió en desarrollar la identidad visual para una marca de ropa juvenil, incluyendo logotipo, paleta de colores y papelería corporativa.</p>
+  <h2>Project 4: 7 collection</h2>
+  <p class="texto-subproyecto">Create content arround the number 7.</p>
 
   <div class="portada-info">
-    <img class="portada" src="https://imgur.com/mM9BeCu.jpg" alt="Portada Proyecto 1">
+    <img class="portada" src="https://imgur.com/mM9BeCu.jpg" alt="Portada Proyecto 4">
     
-    <div class="info-extra">
-      <h4>Detalles del Proyecto</h4>
+     <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
       <ul>
-        <li><strong>Cliente:</strong> Urban Wear</li>
-        <li><strong>Año:</strong> 2024</li>
-        <li><strong>Herramientas:</strong> Illustrator, Photoshop</li>
-        <li><strong>Tipo:</strong> Branding completo</li>
+        <li><strong>Client:</strong> University 3rd year Project</li>
+        <li><strong>Year:</strong> 2024</li>
+        <li><strong>Tools:</strong> Indesign, Photoshop, Procreate</li>
+        <li><strong>Type:</strong> Ilustrations and Publication</li>
       </ul>
+
+      <div class="texto-detalles">
+This project was centered around the number 7. I began by creating 7 stylized and artistic interpretations of the number, experimenting with various styles. Then, I decided to gather some fun facts related to the number 7. I also drew one piece a day for a week, capturing different things I could see or morph into a 7. For example, a port in Falmouth turned into a shape resembling the number. To bring all the content together, I compiled it into a publication.
+      </div>
     </div>
   </div>
 
@@ -220,22 +396,38 @@
   </div>
 </section>
 
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>     
+    
+            <!-- 🖼 PROYECTO 5 -->
+  <section id="proyecto5">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+    
 <!-- Proyecto 5 -->
 <section class="proyecto">
-  <h2>Proyecto 5: Shatered Shiragani</h2>
-  <p>Este proyecto consistió en desarrollar la identidad visual para una marca de ropa juvenil, incluyendo logotipo, paleta de colores y papelería corporativa.</p>
+  <h2>Project 5: Shatered Hiragani</h2>
+  <p class="texto-subproyecto">Create a new typeface</p>
 
   <div class="portada-info">
     <img class="portada" src="https://imgur.com/M8ubmup.jpg" alt="Portada Proyecto 1">
     
-    <div class="info-extra">
-      <h4>Detalles del Proyecto</h4>
+  <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
       <ul>
-        <li><strong>Cliente:</strong> Urban Wear</li>
-        <li><strong>Año:</strong> 2024</li>
-        <li><strong>Herramientas:</strong> Illustrator, Photoshop</li>
-        <li><strong>Tipo:</strong> Branding completo</li>
+        <li><strong>Client:</strong> University 1st year Project</li>
+        <li><strong>Year:</strong> 2021</li>
+        <li><strong>Tools:</strong> Indesign</li>
+        <li><strong>Type:</strong> Typeface</li>
       </ul>
+            <div class="texto-detalles">
+For this project, the professors gave us a random theme to create a typeface that reflected it. My theme was 'Shattered.' After brainstorming, the image that kept popping up was plates shattering. So, I decided to create a font and place it on a plate, then break the plate to capture the type from the shards. The next step was selecting the base type for the project. I created my own stylish base type and added a straight line to serve as a reference in case the shattering affected legibility. I ended up creating multiple versions of each letter by taking photos of the fragments in different positions. From that process, I developed two typefaces: one stylish and legible, and one with the least legible version, based on the pictures I took of the shards.
+      </div>
     </div>
   </div>
 
@@ -249,24 +441,34 @@
   </div>
 </section>
 
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>     
+  
 
-
+    <!-- Galería, portada, etc. -->
+  <section id="proyecto6">
 <section class="proyecto tesis">
   <div class="tesis-header">
     <div class="tesis-texto">
-      <h2>Tesis: “Título de tu tesis aquí”</h2>
-      <p>
-        Esta tesis investiga [breve resumen de 2-3 líneas].  
-        Puedes leer el documento completo haciendo clic en el enlace:
-        <a href="https://drive.google.com/file/d/1Xweztbu32z5fQcV0XNc6sGWN43_Ku1Xp/view?usp=sharing" target="_blank">Ver Tesis Completa (PDF)</a>.
-      </p>
+      <h2>Thesis: “Even newer new Brutalism, Green Brutalism”</h2>
+      <h3>
+        I took the comunication aspect of my carrer to make the thesis.
+        <h3>
+        My idea was to clean the image of brutalism, while providing a possible future were this architecture movement is viable and beneficial.
+        <h3>
+        You can read the complete version with the link:
+        <a href="https://drive.google.com/file/d/1Xweztbu32z5fQcV0XNc6sGWN43_Ku1Xp/view?usp=sharing" target="_blank">View Complete Thesis (PDF)</a>.
+      </.galeria-portada>
     </div>
 
     <img src="https://imgur.com/avy948a.jpg" alt="Portada de la tesis" class="portada-tesis">
   </div>
 
   <div class="artefacto-galeria-contenedor">
-    <h4>Artefacto visual relacionado</h4>
+    <h4>Related Artefact</h4>
     <div class="artefacto-galeria">
       <img src="https://imgur.com/2ASQXcI.jpg" alt="Artefacto 1">
       <img src="https://imgur.com/zHgBnwr.jpg" alt="Artefacto 2">
@@ -275,26 +477,44 @@
   </div>
 </section>
 
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>     
+  
 
-
-
+              <!-- 🖼 PROYECTO 7 -->
+  <section id="proyecto7">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
 
 <!-- Proyecto: Revista sobre posters -->
 <section class="proyecto">
-  <h2>Proyecto: Revista "Visual Rhythms"</h2>
-  <p>Diseño editorial que recoge una selección de carteles musicales con un enfoque curatorial y experimental.</p>
+  <h2>Project 7: Music Posters</h2>
+  <p class="texto-subproyecto">Create a visual response to music</p>
+
 
   <div class="portada-info">
     <img class="portada" src="https://imgur.com/QTkxpMY.jpg" alt="Revista portada">
     
-    <div class="info-extra">
-      <h4>Detalles del Proyecto</h4>
+    <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
       <ul>
-        <li><strong>Formato:</strong> Revista editorial</li>
-        <li><strong>Temática:</strong> Posters musicales</li>
-        <li><strong>Herramientas:</strong> InDesign, Photoshop</li>
-        <li><strong>Año:</strong> 2024</li>
+        <li><strong>Client:</strong> Open to anyone interested.</li>
+        <li><strong>Year:</strong> Ongoing</li>
+        <li><strong>Tools:</strong> Indesign, Photoshop, Procreate</li>
+        <li><strong>Type:</strong> Posters</li>
       </ul>
+
+      <div class="texto-detalles">
+PUBLICATION: I created a publication featuring the first 20 posters, compiling them into a format I also love working with—magazines. My goal is to produce more in the future as I continue creating posters. It’s a very simple magazine that includes the poster, along with information about the song, the artist, and some personal insights. My plan is to keep developing this project as long as I’m a designer.
+      </div>
+            <div class="texto-detalles">
+POSTERS: For the posters I give myself complete creative freedom and I see where the song and my creativity takes me, and then I try to place it into a poster. 
+      </div>
     </div>
   </div>
 
@@ -309,7 +529,7 @@
 <!-- Transición suave -->
 <div class="transicion especial">
   <hr>
-  <p class="transicion-texto">Los posters incluidos en esta revista forman parte de una colección más amplia que puedes explorar a continuación</p>
+  <p class="transicion-texto">The posters included in this magazine are part of a larger collection that you can explore below.</p>
   <hr>
 </div>
 
@@ -317,8 +537,10 @@
 
 
 <section class="posters-musica">
-  <h2>Posters de Música</h2>
-  <p>Una selección de posters realizados para distintos proyectos musicales. Inspirados en el arte urbano, digital y la estética experimental.</p>
+  <h2>Music Posters</h2>
+      <div class="texto-detalles">
+A collection of all the music posters I made, and keep making as a hobby.
+      </div>
 
   <div class="galeria-posters">
     <img src="https://imgur.com/jdIuwHr.jpg" alt="pierce">
@@ -344,7 +566,7 @@
     <img src="https://imgur.com/58HSVW5.jpg" alt="Till I collapse">
     <img src="https://imgur.com/USI21Lf.jpg" alt="Revenge">
     <img src="https://imgur.com/6awMt1w.jpg" alt="Teknocity">
-        <img src="https://imgur.com/B2dIudc.jpg" alt="The nights">
+    <img src="https://imgur.com/B2dIudc.jpg" alt="The nights">
     <img src="https://imgur.com/oTdhA7f.jpg" alt="Bittersweet">
     <img src="https://imgur.com/zupghMG.jpg" alt="Me gustas tu">
     <img src="https://imgur.com/r0zan9v.jpg" alt="Drunk and naked">
@@ -354,10 +576,334 @@
   </div>
 </section>
 
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>     
+
+
+           <!-- 🖼 PROYECTO 8 -->
+  <section id="proyecto8">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+    
+<!-- Proyecto 8 -->
+<section class="proyecto">
+  <h2>Project 8: Vertere</h2>
+  <p class="texto-subproyecto">Create an ethical Brand</p>
+
+  <div class="portada-info">
+    <img class="portada" src="https://imgur.com/YVCHPHe.jpg" alt="Portada Proyecto 8">
+    
+    <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
+      <ul>
+        <li><strong>Client:</strong> University 2nd year Project</li>
+        <li><strong>Year:</strong> 2022</li>
+        <li><strong>Tools:</strong> Indesign, Photoshop, Sewing Machine</li>
+        <li><strong>Type:</strong> Brand Developing</li>
+      </ul>
+
+      <div class="texto-detalles">
+For this project, I drew inspiration from a presentation we had about the environment and how to design ethically. One fact that stood out was the highest recorded temperature (from 2022), so I decided to base the project around that number. It was in Sicily, and the temperature reached 48.8 degrees.
+      </div>
+            <div class="texto-detalles">
+I decided to create a fashion brand, but instead of focusing on building a strong brand identity, I wanted to emphasize the issue itself. The idea was that the design style and the concept of the brand would make a name for itself, rather than relying on a specific name or logo. I aimed to create different drop concepts, such as featuring the highest temperature recorded that year, the location, and centering the drop around that place and temperature. I designed a conceptual T-shirt, some tags, and a small publication that would accompany each purchase. The booklet included visual responses and concepts exploring how global warming would impact Sicily, in this case. I also had a video interview with a Sicilian, but unfortunately, I lost the footage. My goal was to make the issue more personal—seeing who and what is affected—bringing the problem closer to home rather than keeping it distant.
+      </div>
+    </div>
+  </div>
+
+  <div class="galeria">
+    <img src="https://imgur.com/AUUPxfD.jpg" alt="Foto 1">
+    <img src="https://imgur.com/yDTCI0B.jpg" alt="Foto 2">
+    <img src="https://imgur.com/AsarEdJ.jpg" alt="Foto 3">
+    <img src="https://imgur.com/uPEUfX5.jpg" alt="Foto 4">
+    <img src="https://imgur.com/angwPUn.jpg" alt="Foto 5">
+    <img src="https://imgur.com/fDxs579.jpg" alt="Foto 6">
+    <img src="https://imgur.com/UG0FWFR.jpg" alt="Foto 7">
+    <img src="https://imgur.com/Go8iJ1v.jpg" alt="Foto 8">
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>     
+  
+           <!-- 🖼 PROYECTO 9 -->
+  <section id="proyecto9">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+    
+<!-- Proyecto 9 -->
+<section class="proyecto">
+  <h2>Project 9: Graffiti Zine</h2>
+  <p class="texto-subproyecto">Develop a Zine for a Bookfair event at Falmouth</p>
+
+  <div class="portada-info">
+    <img class="portada" src="https://imgur.com/4k2I4JJ.jpg" alt="Portada Proyecto 9">
+    
+    <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
+      <ul>
+        <li><strong>Client:</strong> University 3rd year Project</li>
+        <li><strong>Year:</strong> 2024</li>
+        <li><strong>Tools:</strong> Indesign, Photoshop, Procreate</li>
+        <li><strong>Type:</strong> Artistic Zine</li>
+      </ul>
+
+      <div class="texto-detalles">
+For this project they asked us to make a poster for the event. But, we also had a day to experiment with different analog tools the teachers brought, to produce content to sell at the bookfair. I ended up making a Graffiti inspired Zine, plus a poster of a 7 in a graffiti style, that later on inspired me to make the 7 collection proyect. We could bring pictures but everything else is analog.
+      </div>
+            <!-- Imagen pequeña con texto debajo -->
+      <div style="margin-top: 15px; width: 40%;">
+        <img src="https://imgur.com/qFSLvrs.jpg" alt="Sketch del poster para el bookfair" style="width: 100%; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.1);">
+        <p style="font-size: 1.1rem; color: #555; margin-top: 8px;">
+          Sketch of the promotional poster I made
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="galeria">
+    <img src="https://imgur.com/foZ1Qic.jpg" alt="Foto 1">
+    <img src="https://imgur.com/UBSt1kM.jpg" alt="Foto 2">
+    <img src="https://imgur.com/f9GDUez.jpg" alt="Foto 3">
+    <img src="https://imgur.com/7ZW8hWQ.jpg" alt="Foto 4">
+    <img src="https://imgur.com/p79RvDZ.jpg" alt="Foto 5">
+    <img src="https://imgur.com/6w4ijAM.jpg" alt="Foto 6">
+    <img src="https://imgur.com/3fZ2IOY.jpg" alt="Foto 7">
+    <img src="https://imgur.com/BklExuZ.jpg" alt="Foto 8">
+    <img src="https://imgur.com/Ohmegza.jpg" alt="Foto 7">
+    <img src="https://imgur.com/1AWY8qY.jpg" alt="Foto 8">
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>     
+
+           <!-- 🖼 PROYECTO 10 -->
+  <section id="proyecto10">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+    
+<!-- Proyecto 10 -->
+<section class="proyecto">
+  <h2>Project 10: Vive y deja Vivir</h2>
+  <p class="texto-subproyecto">Make a publication of a personal development example</p>
+
+  <div class="portada-info">
+    <img class="portada" src="https://imgur.com/dnNyANS.jpg" alt="Portada Proyecto 9">
+    
+    <!-- Info del proyecto a la derecha -->
+    <div class="info-extra  texto-detalles">
+      <h4>Project Details</h4>
+      <ul>
+        <li><strong>Client:</strong> University 1st year Project</li>
+        <li><strong>Year:</strong> 2021</li>
+        <li><strong>Tools:</strong> Indesign </li>
+        <li><strong>Type:</strong> Publication</li>
+      </ul>
+
+      <div class="texto-detalles">
+This was the first publication I made. We were asked to create it about a moment in our lives when we overcame hardship, which usually involves a deep personal experience. I embraced that and made it more visual by designing the cover using sandpaper, along with a dark, illustrative aesthetic for the interior. I took heavy inspiration from Hollow Knight, the game, as it was part of the story.
+      </div>
+    </div>
+  </div>
+
+  <div class="galeria">
+    <img src="https://imgur.com/dnNyANS.jpg" alt="Foto 1">
+    <img src="https://imgur.com/6KVaFEh.jpg" alt="Foto 2">
+    <img src="https://imgur.com/poZNJ43.jpg" alt="Foto 3">
+    <img src="https://imgur.com/CLPW8mI.jpg" alt="Foto 4">
+    <img src="https://imgur.com/Npje57D.jpg" alt="Foto 5">
+    <img src="https://imgur.com/T8KBAmW.jpg" alt="Foto 6">
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>     
+
+
+           <!-- 🖼 PROYECTO 11 -->
+  <section id="proyecto11">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+
+<section class="proyecto">
+  <h2>Art: Murals</h2>
+  <p class="texto-subproyecto">Compilation of different murals I've made.</p>
+
+  <div class="galeria-posters">
+    <img src="https://imgur.com/74VOkns.jpg" alt="Fenix">
+    <img src="https://imgur.com/vaaV7S6.jpg" alt="anubis">
+    <img src="https://imgur.com/LJtnWj5.jpg" alt="Francisco mural grande">
+    <img src="https://imgur.com/tEqXDsL.jpg" alt="pajaro francisco">
+    <img src="https://imgur.com/n2jFBOw.jpg" alt="garaje">
+    <img src="https://imgur.com/qyQ6a4C.jpg" alt="dragon">
+    <img src="https://imgur.com/pPzwmEZ.jpg" alt="francotirador">
+    
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section> 
+
+           <!-- 🖼 PROYECTO 12 -->
+  <section id="proyecto12">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+
+<section class="proyecto">
+  <h2>Car Posters</h2>
+  <p class="texto-subproyecto">Compilation of different car related posters.</p>
+
+  <div class="galeria-posters">
+    <img src="https://imgur.com/e740TSX.jpg" alt="rx7">
+    <img src="https://imgur.com/aj7ed0C.jpg" alt="ford escort">
+    
+    
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section> 
+
+           <!-- 🖼 PROYECTO 13 -->
+  <section id="proyecto13">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+
+<section class="proyecto">
+  <h2>Logos</h2>
+  <p class="texto-subproyecto">Collection of standalone logos.</p>
+
+  <div class="galeria-posters">
+    <img src="https://imgur.com/CG6rU9E.jpg" alt="no aptos logo">
+
+    
+  </div>
+</section>
+    
+              <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section>    
+
+           <!-- 🖼 PROYECTO 14 -->
+  <section id="proyecto14">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+
+<section class="proyecto">
+  <h2>Standalone Posters</h2>
+  <p class="texto-subproyecto">Collection of posters from other projects, or standalone posters</p>
+
+  <div class="galeria-posters">
+    <img src="https://imgur.com/EVpCPSF.jpg" alt="luzid nature">
+    <img src="https://imgur.com/BnEkoe6.jpg" alt="luzid cyberpunk">
+    <img src="https://imgur.com/18rv1gV.jpg" alt="luzid brutalista">
+    <img src="https://imgur.com/Ow3JEvT.jpg" alt="luzid espacio">
+    <img src="https://imgur.com/ARhGIbe.jpg" alt="Luzid atlantis">
+    
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section> 
+
+           <!-- 🖼 PROYECTO 15 -->
+  <section id="proyecto15">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+
+
+<section class="proyecto">
+  <h2>Art: Perspective Drawings</h2>
+  <p class="texto-subproyecto">Collection of perspective-related drawings I've made. I enjoy architecture and like creating these drawings/sketches every now and then.</p>
+
+  <div class="galeria-posters">
+    <img src="https://imgur.com/spfHuUc.jpg" alt="Israel 1">
+    <img src="https://imgur.com/xe7d7Bj.jpg" alt="Israel 2">
+    <img src="https://imgur.com/g9qDGMa.jpg" alt="Israel 3">
+    <img src="https://imgur.com/wxTM4cb.jpg" alt="Israel 4">
+    <img src="https://imgur.com/t93KrHi.jpg" alt="1 point perspective">
+    <img src="https://imgur.com/do3UolM.jpg" alt="2 point perspective">
+    <img src="https://imgur.com/SkNSkSU.jpg" alt="3 point perspective">
+    <img src="https://imgur.com/HtJuqEH.jpg" alt="3 point perspective colour">
+    <img src="https://imgur.com/1dsSaRk.jpg" alt="Waterfall House">
+    <img src="https://imgur.com/8QH8QF5.jpg" alt="Out of place building1">
+    <img src="https://imgur.com/HE6wZR8.jpg" alt="Out of place building2">
+    <img src="https://imgur.com/bUL7zC8.jpg" alt="Out of place building3">
+    <img src="https://imgur.com/EKalvO9.jpg" alt="Out of place building4">
+    
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section> 
+
+           <!-- 🖼 PROYECTO 16 -->
+  <section id="proyecto16">
+    <h2></h2>
+    <p></p>
+    <!-- Galería, portada, etc. -->
+
+
+<section class="proyecto">
+  <h2>Clothes</h2>
+  <p class="texto-subproyecto">Collection of different clothes I've customized for some clients.</p>
+
+  <div class="galeria-posters">
+    <img src="https://imgur.com/u3dHBGD.jpg" alt="Bata Ruse">
+    <img src="https://imgur.com/4I8isjT.jpg" alt="Chaqueta Flores">
+    <img src="https://imgur.com/4Ejm7EK.jpg" alt="Converse flores">
+    <img src="https://imgur.com/hJ3CfiZ.jpg" alt="Converse sol y luna">
+  </div>
+</section>
+
+             <!-- 🔁 Botón de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="#inicio">← Go Back</a>
+    </div>
+  </section> 
+
 
 
 <footer>
-  © 2025 Alejandro Jimenez
+  © 2025 Alejandro Jimenez     -----    alexjimenez.pdb@gmail.com
 </footer>
 
 </body>
